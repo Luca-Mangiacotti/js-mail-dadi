@@ -10,7 +10,6 @@ const accessList = [
     'ugo@email.com',
 ]
 
-//ORA CHIEDO ALL'USER DI INSERIRE LA SUA E-MAIL
 alert('Da qui potrai controllare se la tua e-mail è presente nella lista d\'accesso')
 
 //CREO UNA VARIABILE CHE CONTERRA' LA E-MAIL DELL'USER
@@ -23,7 +22,9 @@ let mailVerification = 0
 //PER ASSICURARMI CHE SIA STATA INSERITA UNA E-MAIL, NEL CASO CONTRARIO VERRA' RICHIESTA 
 //NUOVAMENTE LA E-MAIL
 do{
+    //CHIEDO ALL'USER DI INSERIRE LA SUA E-MAIL
     userMail = prompt('Inserisci la tua e-mail')
+    //PROCEDO AL CONTROLLO
     mailVerification = userMail.search("@");
     if ( mailVerification < 0){
         alert('attenzione non è stata inserita una e-mail corretta')
